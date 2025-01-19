@@ -1,1 +1,0 @@
-# droplet_stationalSurface_impact
