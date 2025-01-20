@@ -14,13 +14,13 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-phases          (water air);
+phases          (gasoline air);
 
-water
+gasoline
 {
     transportModel  Newtonian;
-    nu              1e-06;
-    rho             1000;
+    nu              0.0005;
+    rho             740;
 }
 
 air
@@ -30,7 +30,7 @@ air
     rho             1;
 }
 
-sigma            0.07;
+sigma            0.021;
 
 
 // ************************************************************************* //

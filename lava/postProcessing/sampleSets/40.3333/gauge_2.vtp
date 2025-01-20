@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<!-- time='40.3333' -->
+<VTKFile type='PolyData' version='0.1' byte_order='LittleEndian' header_type='UInt64'>
+  <PolyData>
+    <FieldData>
+      <DataArray type='Float32' Name='TimeValue' NumberOfTuples='1' format='binary'>
+BAAAAAAAAABVVSFC
+      </DataArray>
+    </FieldData>
+    <Piece NumberOfPoints='12'>
+      <Points>
+        <DataArray type='Float32' Name='Points' NumberOfComponents='3' format='binary'>
+kAAAAAAAAADNzEw+j8L1PArXozvNzEw+zcxMPQrXozvNzEw+zczMPQrXozvNzEw+mpkZPgrXozvNzEw+zcxMPgrXozvNzEw+AACAPgrXozvNzEw+mpmZPgrXozvNzEw+MzOzPgrXozvNzEw+zczMPgrXozvNzEw+ZmbmPgrXozvNzEw+AAAAPwrXozvNzEw+zcwMPwrXozs=
+        </DataArray>
+      </Points>
+      <PointData>
+        <DataArray type='Float32' Name='alpha.lava' format='binary'>
+MAAAAAAAAABF838/hO1/Pwzifz+l4X8/UNl/P5rMfz91wX8/Q7t/P2O3fz+Lr38/iqp/P/mtfz8=
+        </DataArray>
+      </PointData>
+    </Piece>
+  </PolyData>
+</VTKFile>

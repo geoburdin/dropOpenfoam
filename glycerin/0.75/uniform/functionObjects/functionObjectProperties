@@ -1,0 +1,53 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2412                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    arch        "LSB;label=32;scalar=64";
+    class       dictionary;
+    location    "0.75/uniform/functionObjects";
+    object      functionObjectProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+cdf7e925f5746741c316f5fbcf39ad0dfca90775
+{
+    sampleSets
+    {
+        scalar
+        {
+            average(gauge_1,alpha.glycerin) 0.9999999997375684;
+            min(gauge_1,alpha.glycerin) 0.9999999997375684;
+            max(gauge_1,alpha.glycerin) 0.9999999997375684;
+            average(gauge_2,alpha.glycerin) 0.9999999997260817;
+            min(gauge_2,alpha.glycerin) 0.9999999991502843;
+            max(gauge_2,alpha.glycerin) 1.00000000057881;
+            average(alpha.glycerin) 0.9999999997269652;
+            min(alpha.glycerin) 0.9999999991502843;
+            max(alpha.glycerin) 1.00000000057881;
+        }
+        label
+        {
+            size(gauge_1,alpha.glycerin) 1;
+            size(gauge_2,alpha.glycerin) 12;
+            size(alpha.glycerin) 13;
+        }
+    }
+}
+
+sampleSets
+{
+    alpha.glycerin
+    {
+        file            "<case>/postProcessing/sampleSets/0.75/gauge_2.vtp";
+    }
+}
+
+
+// ************************************************************************* //

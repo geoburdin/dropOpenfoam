@@ -14,13 +14,13 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-phases          (water air);
+phases          (glycerin air);
 
-water
+glycerin
 {
     transportModel  Newtonian;
-    nu              1e-06;
-    rho             1000;
+    nu              1.5;
+    rho             1260;
 }
 
 air
@@ -30,7 +30,7 @@ air
     rho             1;
 }
 
-sigma            0.07;
+sigma            0.063;
 
 
 // ************************************************************************* //

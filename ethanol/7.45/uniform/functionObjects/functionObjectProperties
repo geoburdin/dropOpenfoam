@@ -1,0 +1,53 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2412                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    arch        "LSB;label=32;scalar=64";
+    class       dictionary;
+    location    "7.45/uniform/functionObjects";
+    object      functionObjectProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+cdf7e925f5746741c316f5fbcf39ad0dfca90775
+{
+    sampleSets
+    {
+        scalar
+        {
+            average(gauge_1,alpha.ethanol) 0.9999982023429251;
+            min(gauge_1,alpha.ethanol) 0.9999982023429251;
+            max(gauge_1,alpha.ethanol) 0.9999982023429251;
+            average(gauge_2,alpha.ethanol) 0.999999685231451;
+            min(gauge_2,alpha.ethanol) 0.9999984470470226;
+            max(gauge_2,alpha.ethanol) 1.000000239601748;
+            average(alpha.ethanol) 0.9999995711631028;
+            min(alpha.ethanol) 0.9999982023429251;
+            max(alpha.ethanol) 1.000000239601748;
+        }
+        label
+        {
+            size(gauge_1,alpha.ethanol) 1;
+            size(gauge_2,alpha.ethanol) 12;
+            size(alpha.ethanol) 13;
+        }
+    }
+}
+
+sampleSets
+{
+    alpha.ethanol
+    {
+        file            "<case>/postProcessing/sampleSets/7.45/gauge_2.vtp";
+    }
+}
+
+
+// ************************************************************************* //

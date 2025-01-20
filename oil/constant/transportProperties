@@ -19,8 +19,8 @@ phases          (oil air);
 oil
 {
     transportModel  Newtonian;
-    nu              1e-06;
-    rho             1000;
+    nu              0.1;    // Oil's kinematic viscosity
+    rho             850;    // Oil's density
 }
 
 air
@@ -30,7 +30,7 @@ air
     rho             1;
 }
 
-sigma            0.07;
+sigma            0.032;
 
 
 // ************************************************************************* //

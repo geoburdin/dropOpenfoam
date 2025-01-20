@@ -11,7 +11,7 @@ sampleSets
     setFormat           vtk;
     interpolationScheme cellPointFace;
 
-    fields ( alpha.water );
+    fields ( alpha.glycerin );
 
     sets
     {
