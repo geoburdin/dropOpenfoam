@@ -8,7 +8,7 @@ Usage: Use the following commands in order.
 
 >blockMesh
 
->setFileds
+>setFields
 
 >interFoam
 
