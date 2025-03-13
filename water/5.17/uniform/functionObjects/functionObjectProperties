@@ -1,0 +1,102 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2412                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    arch        "LSB;label=32;scalar=64";
+    class       dictionary;
+    location    "5.17/uniform/functionObjects";
+    object      functionObjectProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+cdf7e925f5746741c316f5fbcf39ad0dfca90775
+{
+    waveMeasurement
+    {
+        scalar
+        {
+            average(probe1,alpha.water) 0.5475399862354581;
+            min(probe1,alpha.water) 9.024298573538607e-86;
+            max(probe1,alpha.water) 1.000002683504691;
+            average(probe2,alpha.water) 0.4606595671734612;
+            min(probe2,alpha.water) 5.114921197817205e-48;
+            max(probe2,alpha.water) 1.000000737444166;
+            average(probe3,alpha.water) 0.5241490876808015;
+            min(probe3,alpha.water) 5.267190275957441e-75;
+            max(probe3,alpha.water) 1.000004523161925;
+            average(alpha.water) 0.5107828803632403;
+            min(alpha.water) 9.024298573538607e-86;
+            max(alpha.water) 1.000004523161925;
+        }
+        label
+        {
+            size(probe1,alpha.water) 60;
+            size(probe2,alpha.water) 60;
+            size(probe3,alpha.water) 60;
+            size(alpha.water) 180;
+        }
+    }
+    interfaceHeight1
+    {
+        scalar
+        {
+            areaAverage(atmosphere,alpha.water) 4.253530875431244e-42;
+        }
+    }
+    interfaceHeight2
+    {
+        scalar
+        {
+            areaAverage(atmosphere,alpha.water) 4.253530875431244e-42;
+        }
+    }
+    interfaceHeight3
+    {
+        scalar
+        {
+            areaAverage(atmosphere,alpha.water) 4.253530875431244e-42;
+        }
+    }
+}
+
+waveMeasurement
+{
+    alpha.water
+    {
+        file            "<case>/postProcessing/waveMeasurement/5.17/probe3_alpha.water.xy";
+    }
+}
+
+interfaceHeight1
+{
+    alpha.water
+    {
+        file            "<case>/postProcessing/interfaceHeight1/surface/5.17/alpha.water_patch_atmosphere.raw";
+    }
+}
+
+interfaceHeight2
+{
+    alpha.water
+    {
+        file            "<case>/postProcessing/interfaceHeight2/surface/5.17/alpha.water_patch_atmosphere.raw";
+    }
+}
+
+interfaceHeight3
+{
+    alpha.water
+    {
+        file            "<case>/postProcessing/interfaceHeight3/surface/5.17/alpha.water_patch_atmosphere.raw";
+    }
+}
+
+
+// ************************************************************************* //
